@@ -4,9 +4,7 @@ function TaskList ({tasks}) {
   const listItems = tasks.map(task =>
     <li
       key={task.id}
-      style={{
-        color: task.isComplete ? 'green' : 'red'
-      }}
+      className= {task.isComplete ? 'line-through text-gray-500' : ''}
     >
       {task.text}
     </li>

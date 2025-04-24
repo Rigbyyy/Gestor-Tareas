@@ -4,6 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TaskList from './Components/TaskList/TaskList';
+
+const tareas = [
+  { text: 'Terminar el examen', isComplete: false, id: 1 },
+  { text: 'Usar hooks', isComplete: false, id: 2 },
+  { text: 'Comprarme una ns200', isComplete: true, id: 3 },
+];
 function App() {
  
 
@@ -27,6 +33,7 @@ function App() {
   <button type="submit" className="btn btn-dark">
     Agregar Tareas
   </button>
+  <TaskList tasks={tareas}></TaskList>
 </form>
   )
 }
