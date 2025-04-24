@@ -5,15 +5,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TaskList from './Components/TaskList/TaskList';
 function App() {
- /* const [count, setCount] = useState(0)
-<div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>*/
+ 
 
   return (
     
@@ -26,7 +18,7 @@ function App() {
       type="text"
       className="form-control"
       id="InputTarea"
-      aria-describedby="emailHelp"
+      aria-describedby="textHelp"
     />
     
   </div>
